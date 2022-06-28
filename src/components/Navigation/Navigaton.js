@@ -55,7 +55,7 @@ const Navigation = () =>{
                 </div>
 
                 {extend === true ? 
-                    <ListLinks/>
+                    <ListLinks change={setExtend}/>
                 :
                     <p className="p"></p>
                 }

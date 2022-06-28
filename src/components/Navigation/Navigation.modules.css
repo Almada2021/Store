@@ -1,6 +1,5 @@
 .Navigation{
-    background-color: #47B5FF;
-    display: flex;
+ background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);    display: flex;
     flex-direction: column;
     overflow: hidden;
     position: fixed;
@@ -34,8 +33,9 @@
     list-style: none;
 }
 .Navigation__link-li{
-    display: block;
+    border-radius: 0.153vw;
     color: #fff !important;
+    display: block;
     font-size: 16px;
     text-align: start;
     text-decoration: none;
@@ -52,6 +52,8 @@
 /* Desktop Design */
 @media (min-width : 768px){
     .Navigation{
+        height: 70px;
+
         flex-direction: row;
     }   
     .Navigation__button{
@@ -63,12 +65,47 @@
     .Navigation__link{
         flex-direction: row;
         justify-content: end;
-        margin: auto 10vw auto auto;
+        margin: auto 5vw auto auto;
+
         gap: 2vw;
     }
     .Navigation__link-li{
         width: max-content;
-        border-radius: 5px;
+        /* border-radius: 5px; */
+        font-size: 18px;
         text-align: center;
+    }
+}
+@media (min-width : 1152px){
+    .Navigation{
+        height: 75px;
+    }
+    .Navigation__link-li{
+        
+        font-size: 26px;
+    }
+}
+@media (min-width : 1440px){
+    .Navigation{
+        height: 80px;
+    }
+    .Navigation__link-li{
+        font-size: 28px;
+    }
+}
+@media (min-width : 2048px){
+    .Navigation{
+        height: 130px;
+    }
+    .Navigation__link-li{
+        font-size: 32px;
+    }
+}
+@media (min-width : 4096px){
+    .Navigation{
+        height: 200px;
+    }
+    .Navigation__link-li{
+        font-size: 64px;
     }
 }
