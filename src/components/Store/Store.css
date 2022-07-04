@@ -1,0 +1,20 @@
+.Store{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+.Product__list{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 10vh;
+}
+@media (min-width:800px){
+    .Product__list{
+        width:75vw;
+    }
+}

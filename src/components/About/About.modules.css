@@ -1,0 +1,16 @@
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.AboutList{
+    width: 75vw;
+    padding: 20px;
+}
+.AboutQuestion{
+    display: block;
+    width: max-content;
+    box-shadow: 0 0 4px #b8b8b8;
+    padding: 10px;
+}

@@ -3,7 +3,7 @@ import Card from "./Card/Card";
 import Button from "../Button/Button";
 const Home = () =>{
     return(
-        <div className="Home">
+        <div className="Home" >
             <header className="Home__header">
                 <h1 className="Home__header-h1">The store of dreams</h1>
                 <Button text="Buy now" size="Button__big"></Button>
