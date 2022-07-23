@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Blog from './components/Blog/Blog';
 import ProductPage from './components/ProductPage/ProductPage';
 import About from './components/About/About';
+import PayForm from './components/PayForm/Payform';
 function App() {
   return (
     <div className="App" >

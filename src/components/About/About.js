@@ -3,7 +3,7 @@ const About = () => {
     return (
     <div className="About">
         <ul className="AboutList">
-            <li className="AboutQuestion">How I can Pay in this Store<button>+</button></li>
+            <li className="AboutQuestion">How I can Pay in this Store<button className="AboutQuestion__btn">+</button></li>
         </ul>
     </div>  );
 }

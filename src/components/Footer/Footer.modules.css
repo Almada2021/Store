@@ -37,3 +37,19 @@
     height: 13vh;
     object-fit: contain;
 }
+@media (min-width:1440px){
+    .Footer__image-p{
+        font-size: 22px;
+    }
+    .Footer__list-li{
+        font-size: 24px;
+    }
+}
+@media (min-width:1800px){
+    .Footer__image-p{
+        font-size: 28px;
+    }
+    .Footer__list-li{
+        font-size: 30px;
+    }
+}

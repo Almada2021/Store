@@ -1,30 +1,35 @@
 .ProductComponent{
-    height: 50vh;
     width: 100vw;
-
+    padding: 10%;
+    z-index: 20;
+    margin-top: 100px;
 }
 .ProductComponent__header{
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
     width: 100%;
-    height: 100%;
 }
 .ProductComponent__container{
-    height: 100%;
-    width: 400px;
+    padding: 10px;
+    width: 80vw;
 
+}
+.container__form-btn{
+    border: none;
+    border-bottom: 1px solid #b8b8b8;
+}
+.container__form-btn:focus{
+    outline: none;
 }
 .ProductComponent__container-img{
     object-fit: contain;
     width: 100%;
-    height: 80%;
 }
 .ProductComponent__text{
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
-    height: 50%;
     overflow: hidden;
 }
 .ProductComponent__text-product{
@@ -35,15 +40,78 @@
     color: #2c0;
     font-size: 16px;
 }
+.container__btn{
+    height: 110px;
+}
+.ProductComponent__text-btn{
+    background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);    
+    width: 80px;
+    align-self: center;
+    border: none;
+    height: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight:bold;
+    box-shadow:  0 10px 6px #b8b8b8;
+    border-radius: 1rem;
+    font-size: 18px;
+    color: #fff;
+    margin: 15px 0;
+}
+.ProductComponent__text-btn:hover{
+    width: 100px;
+    height: 50px;
+    font-size: 36px;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+.ProductComponent__footer{
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 2px #000;
+}
+.ProductComponent__footer-p{
+    font-weight: lighter    ;
+}
 
 @media (min-width:768px) {
     .ProductComponent__header{
         flex-direction: row;
+    }
+    .ProductComponent__container{
+        width: 25vw;
+    
     }
     .ProductComponent__text-product{
         font-size: 32px;
     }
     .ProductComponent__text-price{
         font-size: 24px;
+    }
+}
+.ReactModal__Overlay {
+    z-index: 50;
+}
+/* Modal */
+
+.Modal__close{
+    display: flex;
+    flex-direction: column  ;
+}
+.Modal__close-btn{
+    text-align: right;
+    font-size: 5vw;
+    width: 100%;
+}
+.Modal__close-btn:hover{
+    cursor: default;
+}
+.Modal__Content-img{
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+}
+@media (min-width:768px){
+    .Modal__close-btn{
+        font-size: 3vw;
     }
 }
